@@ -20,7 +20,7 @@ const form = useForm({
             <form @submit.prevent="form.post(route('notes.store'), { onSuccess: () => form.reset() })">
                 <textarea
                     v-model="form.content"
-                    placeholder="What's on your mind?"
+                    placeholder="What's on your mind? Deployed!"
                     class="block w-full border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm"
                 ></textarea>
                 <InputError :content="form.errors.content" class="mt-2" />
